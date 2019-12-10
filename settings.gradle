@@ -1,1 +1,1 @@
-include ':app', ':common', ':health_main'
+include ':app', ':common', ':health_main', ':health_login', ':health_circle', ':health_my'
