@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/ib_applyr_black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"/>
+    <TextView
+        android:id="@+id/jianjie"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的个人简介"
+        android:textColor="#666"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/realname"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+    <EditText
+        android:id="@+id/et_applyr_introduction"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textColorHint="#999999"
+        android:lineSpacingExtra="10dp"
+        android:lineSpacingMultiplier="1"
+        android:gravity="top"
+        android:background="@null"
+        style="?android:attr/textViewStyle"
+        android:hint="\u3000例如：2006年就读广州导师为
+广东省妇幼医学院医学研究新生儿专业导师为广东省妇幼医学
+院医学研究新生儿专业导师为广东省妇幼医学院医学研究新生
+儿专业导师为广东省妇幼"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500字以内"
+            android:textColor="#3087ea"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="220dp"
+            android:textSize="10sp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/lingyu"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的擅长领域"
+        android:textColor="#666"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/et_applyr_introduction"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/realname"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+    <EditText
+        android:id="@+id/et_applyr_good"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textColorHint="#999999"
+        android:lineSpacingExtra="10dp"
+        android:lineSpacingMultiplier="1"
+        android:gravity="top"
+        android:hint="\u3000新生儿黄豆，肺炎，脑膜炎，
+呼吸窘迫，新产生儿贫血，肺东脉高压等各种新生儿重症"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        style="?android:attr/textViewStyle"
+        tools:ignore="MissingConstraints"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300字以内"
+        android:textColor="#3087ea"
+        android:textSize="10sp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginBottom="10dp"
+         />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_applyo_next"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:text="申请入驻"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp"
+        />
+</LinearLayout>

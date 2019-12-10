@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bw.health_login">
+
+    <application>
+        <activity android:name=".Home_paiActivity" />
+        <activity android:name=".Home_wodeActivity" />
+        <activity android:name=".Home_BackActivity" />
+        <activity android:name=".Home_jianjie_Activity" />
+        <activity android:name=".HomeWangMainActivity" />
+        <activity android:name=".HomeShengActivity" />
+        <activity android:name=".HomePageActivity" />
+        <activity android:name=".ShenqingActivity" />
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Home_photoActivity" />
+
+    </application>
+
+</manifest>
